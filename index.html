@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Início | Tricolor Paulista</title>
+<meta name="description" content="Fundado em 1930, o São Paulo Futebol Clube é o Soberano do futebol brasileiro. Explore a história, os ídolos e as conquistas do clube.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+<!-- CSS EXTERNO -->
+<link rel="stylesheet" href="css/style.css">
+<!-- CSS INTERNO (específico desta página) -->
+<style>
+#pagina-index .numero{font-size:5.5rem}
+#atalhos .card:nth-child(even){border-left-color:#0d0d0d}
+</style>
+</head>
+<body id="pagina-index">
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<header id="topo">
+  <div class="container barra">
+    <a class="marca" href="index.html">Tricolor Paulista</a>
+    <button id="btn-tema" type="button">Tema escuro</button>
+    <button id="btn-menu" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  </div>
+  <nav id="menu" aria-label="Páginas do site" hidden>
+    <ul>
+      <li><a href="index.html" aria-current="page">Início</a></li>
+      <li><a href="historia.html">História</a></li>
+      <li><a href="estadio.html">Estádio</a></li>
+      <li><a href="titulos.html">Títulos</a></li>
+      <li><a href="idolos.html">Ídolos</a></li>
+      <li><a href="torcida.html">Torcida</a></li>
+      <li><a href="clima.html">Clima</a></li>
+      <li><a href="linha-do-tempo.html">Linha do tempo</a></li>
+      <li><a href="curiosidades.html">Curiosidades</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="uniformes.html">Uniformes</a></li>
+      <li><a href="aproveitamento.html">Aproveitamento</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="base.html">Base</a></li>
+      <li><a href="classicos.html">Clássicos</a></li>
+    </ul>
+  </nav>
+  <!-- CSS INLINE -->
+  <div class="faixa" style="height:9px"></div>
+</header>
+<main id="conteudo">
+  <section class="hero">
+    <div class="container">
+      <h1>Tricolor Paulista</h1>
+      <p class="lead">Fundado em 1930, o São Paulo Futebol Clube é o Soberano do futebol brasileiro. Explore a história, os ídolos e as conquistas do clube.</p>
+    </div>
+  </section>
+  <div class="container conteudo">
+
+    <h2>O clube tem</h2>
+    <p class="numero" id="idade" aria-live="polite">...</p>
+    <p style="color:var(--suave)">desde a fundação em 25 de janeiro de 1930.</p>
+    <div class="botoes"><button id="btn-unidade" type="button">Ver em dias</button></div>
+    <h2 style="margin-top:2.5rem">Explore o site</h2>
+    <div class="grade" id="atalhos">
+      <div class="card"><a class="titulo" href="historia.html">História</a><p>Do São Paulo da Floresta ao tricampeão mundial.</p></div>
+      <div class="card"><a class="titulo" href="estadio.html">Estádio</a><p>O Estádio Cícero Pompeu de Toledo, casa do Tricolor desde 1960.</p></div>
+      <div class="card"><a class="titulo" href="titulos.html">Títulos</a><p>Mundiais, Libertadores, Brasileirões e mais.</p></div>
+      <div class="card"><a class="titulo" href="idolos.html">Ídolos</a><p>Jogadores e treinador que escreveram a história.</p></div>
+      <div class="card"><a class="titulo" href="torcida.html">Torcida</a><p>Uma das grandes torcidas do Brasil.</p></div>
+      <div class="card"><a class="titulo" href="clima.html">Clima</a><p>Previsão para dia de jogo na zona sul de São Paulo, via API Open-Meteo.</p></div>
+      <div class="card"><a class="titulo" href="linha-do-tempo.html">Linha do tempo</a><p>Marcos do clube, do início às conquistas mais recentes.</p></div>
+      <div class="card"><a class="titulo" href="curiosidades.html">Curiosidades</a><p>Fatos rápidos sobre o Tricolor.</p></div>
+      <div class="card"><a class="titulo" href="quiz.html">Quiz</a><p>Cinco perguntas para testar seu conhecimento sobre o São Paulo.</p></div>
+      <div class="card"><a class="titulo" href="uniformes.html">Uniformes</a><p>Vermelho, branco e preto.</p></div>
+      <div class="card"><a class="titulo" href="aproveitamento.html">Aproveitamento</a><p>Informe vitórias, empates e derrotas e veja os pontos e o aproveitamento.</p></div>
+      <div class="card"><a class="titulo" href="contato.html">Contato</a><p>Formulário de exercício: valida os campos, mas não envia dados.</p></div>
+      <div class="card"><a class="titulo" href="base.html">Base</a><p>Onde nascem os craques do clube.</p></div>
+      <div class="card"><a class="titulo" href="classicos.html">Clássicos</a><p>Rivalidades que param a cidade.</p></div></div>
+
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <p style="margin:0">Projeto de estudo sobre o São Paulo Futebol Clube. Site não oficial e sem fins lucrativos. &copy; <span id="ano"></span></p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

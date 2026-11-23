@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aproveitamento | Tricolor Paulista</title>
+<meta name="description" content="Informe vitórias, empates e derrotas e veja os pontos e o aproveitamento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+<!-- CSS EXTERNO -->
+<link rel="stylesheet" href="css/style.css">
+<!-- CSS INTERNO (específico desta página) -->
+<style>
+#form-calc input{max-width:160px}
+</style>
+</head>
+<body id="pagina-aproveitamento">
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<header id="topo">
+  <div class="container barra">
+    <a class="marca" href="index.html">Tricolor Paulista</a>
+    <button id="btn-tema" type="button">Tema escuro</button>
+    <button id="btn-menu" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  </div>
+  <nav id="menu" aria-label="Páginas do site" hidden>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="historia.html">História</a></li>
+      <li><a href="estadio.html">Estádio</a></li>
+      <li><a href="titulos.html">Títulos</a></li>
+      <li><a href="idolos.html">Ídolos</a></li>
+      <li><a href="torcida.html">Torcida</a></li>
+      <li><a href="clima.html">Clima</a></li>
+      <li><a href="linha-do-tempo.html">Linha do tempo</a></li>
+      <li><a href="curiosidades.html">Curiosidades</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="uniformes.html">Uniformes</a></li>
+      <li><a href="aproveitamento.html" aria-current="page">Aproveitamento</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="base.html">Base</a></li>
+      <li><a href="classicos.html">Clássicos</a></li>
+    </ul>
+  </nav>
+  <!-- CSS INLINE -->
+  <div class="faixa" style="height:9px"></div>
+</header>
+<main id="conteudo">
+  <section class="hero">
+    <div class="container">
+      <h1>Calculadora de pontos</h1>
+      <p class="lead">Informe vitórias, empates e derrotas e veja os pontos e o aproveitamento.</p>
+    </div>
+  </section>
+  <div class="container conteudo">
+
+    <form id="form-calc" class="card" style="max-width:420px" novalidate>
+      <label for="v">Vitórias</label><input id="v" type="number" min="0" value="0">
+      <label for="e">Empates</label><input id="e" type="number" min="0" value="0">
+      <label for="d">Derrotas</label><input id="d" type="number" min="0" value="0">
+      <div class="botoes"><button type="submit">Calcular</button></div>
+    </form>
+    <div class="resultado" id="saida-calc" aria-live="polite" style="max-width:420px">Preencha os campos e clique em Calcular.</div>
+
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <p style="margin:0">Projeto de estudo sobre o São Paulo Futebol Clube. Site não oficial e sem fins lucrativos. &copy; <span id="ano"></span></p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/aproveitamento.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Títulos | Tricolor Paulista</title>
+<meta name="description" content="Mundiais, Libertadores, Brasileirões e mais. Filtre pela categoria.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+<!-- CSS EXTERNO -->
+<link rel="stylesheet" href="css/style.css">
+<!-- CSS INTERNO (específico desta página) -->
+<style>
+#lista-titulos .card[hidden]{display:none}
+</style>
+</head>
+<body id="pagina-titulos">
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<header id="topo">
+  <div class="container barra">
+    <a class="marca" href="index.html">Tricolor Paulista</a>
+    <button id="btn-tema" type="button">Tema escuro</button>
+    <button id="btn-menu" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  </div>
+  <nav id="menu" aria-label="Páginas do site" hidden>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="historia.html">História</a></li>
+      <li><a href="estadio.html">Estádio</a></li>
+      <li><a href="titulos.html" aria-current="page">Títulos</a></li>
+      <li><a href="idolos.html">Ídolos</a></li>
+      <li><a href="torcida.html">Torcida</a></li>
+      <li><a href="clima.html">Clima</a></li>
+      <li><a href="linha-do-tempo.html">Linha do tempo</a></li>
+      <li><a href="curiosidades.html">Curiosidades</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="uniformes.html">Uniformes</a></li>
+      <li><a href="aproveitamento.html">Aproveitamento</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="base.html">Base</a></li>
+      <li><a href="classicos.html">Clássicos</a></li>
+    </ul>
+  </nav>
+  <!-- CSS INLINE -->
+  <div class="faixa" style="height:9px"></div>
+</header>
+<main id="conteudo">
+  <section class="hero">
+    <div class="container">
+      <h1>Sala de troféus</h1>
+      <p class="lead">Mundiais, Libertadores, Brasileirões e mais. Filtre pela categoria.</p>
+    </div>
+  </section>
+  <div class="container conteudo">
+
+    <div class="botoes" id="filtros" role="group" aria-label="Filtrar títulos">
+      <button type="button" data-filtro="todos" aria-pressed="true">Todos</button>
+      <button type="button" data-filtro="mundial" aria-pressed="false">Mundial</button>
+      <button type="button" data-filtro="continental" aria-pressed="false">Continental</button>
+      <button type="button" data-filtro="nacional" aria-pressed="false">Nacional</button>
+      <button type="button" data-filtro="estadual" aria-pressed="false">Estadual</button>
+    </div>
+    <div class="grade" id="lista-titulos">
+      <div class="card" data-cat="mundial"><h3>Mundial Interclubes</h3><p>1992 e 1993 (Copa Intercontinental) e 2005 (Mundial de Clubes da FIFA).</p></div>
+      <div class="card" data-cat="continental"><h3>Copa Libertadores</h3><p>1992, 1993 e 2005.</p></div>
+      <div class="card" data-cat="continental"><h3>Recopa Sul-Americana</h3><p>1993 e 1994.</p></div>
+      <div class="card" data-cat="continental"><h3>Copa CONMEBOL</h3><p>1994.</p></div>
+      <div class="card" data-cat="nacional"><h3>Campeonato Brasileiro</h3><p>1977, 1986, 1991, 2006, 2007 e 2008.</p></div>
+      <div class="card" data-cat="nacional"><h3>Copa do Brasil</h3><p>2023.</p></div>
+      <div class="card" data-cat="nacional"><h3>Supercopa do Brasil</h3><p>1990.</p></div>
+      <div class="card" data-cat="estadual"><h3>Campeonato Paulista</h3><p>22 títulos conquistados até 2021.</p></div>
+    </div>
+    <p id="contagem" style="margin-top:1rem;color:var(--suave)" aria-live="polite"></p>
+
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <p style="margin:0">Projeto de estudo sobre o São Paulo Futebol Clube. Site não oficial e sem fins lucrativos. &copy; <span id="ano"></span></p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/titulos.js"></script>
+</body>
+</html>

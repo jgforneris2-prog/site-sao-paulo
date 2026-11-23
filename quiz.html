@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quiz | Tricolor Paulista</title>
+<meta name="description" content="Cinco perguntas para testar seu conhecimento sobre o São Paulo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+<!-- CSS EXTERNO -->
+<link rel="stylesheet" href="css/style.css">
+<!-- CSS INTERNO (específico desta página) -->
+<style>
+#opcoes button{text-align:left}
+#opcoes button:disabled{opacity:.55;cursor:default}
+</style>
+</head>
+<body id="pagina-quiz">
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<header id="topo">
+  <div class="container barra">
+    <a class="marca" href="index.html">Tricolor Paulista</a>
+    <button id="btn-tema" type="button">Tema escuro</button>
+    <button id="btn-menu" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  </div>
+  <nav id="menu" aria-label="Páginas do site" hidden>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="historia.html">História</a></li>
+      <li><a href="estadio.html">Estádio</a></li>
+      <li><a href="titulos.html">Títulos</a></li>
+      <li><a href="idolos.html">Ídolos</a></li>
+      <li><a href="torcida.html">Torcida</a></li>
+      <li><a href="clima.html">Clima</a></li>
+      <li><a href="linha-do-tempo.html">Linha do tempo</a></li>
+      <li><a href="curiosidades.html">Curiosidades</a></li>
+      <li><a href="quiz.html" aria-current="page">Quiz</a></li>
+      <li><a href="uniformes.html">Uniformes</a></li>
+      <li><a href="aproveitamento.html">Aproveitamento</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="base.html">Base</a></li>
+      <li><a href="classicos.html">Clássicos</a></li>
+    </ul>
+  </nav>
+  <!-- CSS INLINE -->
+  <div class="faixa" style="height:9px"></div>
+</header>
+<main id="conteudo">
+  <section class="hero">
+    <div class="container">
+      <h1>Quiz tricolor</h1>
+      <p class="lead">Cinco perguntas para testar seu conhecimento sobre o São Paulo.</p>
+    </div>
+  </section>
+  <div class="container conteudo">
+
+    <section class="card" id="quiz" aria-live="polite">
+      <h3 id="pergunta"></h3>
+      <div class="botoes" id="opcoes" style="flex-direction:column;align-items:stretch"></div>
+      <p id="feedback" style="font-weight:600;min-height:1.6rem"></p>
+      <p id="placar" style="color:var(--suave)"></p>
+    </section>
+
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <p style="margin:0">Projeto de estudo sobre o São Paulo Futebol Clube. Site não oficial e sem fins lucrativos. &copy; <span id="ano"></span></p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/quiz.js"></script>
+</body>
+</html>

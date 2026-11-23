@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>História | Tricolor Paulista</title>
+<meta name="description" content="Do São Paulo da Floresta ao tricampeão mundial. Texto carregado ao vivo da Wikipédia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+<!-- CSS EXTERNO -->
+<link rel="stylesheet" href="css/style.css">
+<!-- CSS INTERNO (específico desta página) -->
+<style>
+#wiki-texto{font-size:1.15rem;max-width:62ch}
+</style>
+</head>
+<body id="pagina-historia">
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<header id="topo">
+  <div class="container barra">
+    <a class="marca" href="index.html">Tricolor Paulista</a>
+    <button id="btn-tema" type="button">Tema escuro</button>
+    <button id="btn-menu" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  </div>
+  <nav id="menu" aria-label="Páginas do site" hidden>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="historia.html" aria-current="page">História</a></li>
+      <li><a href="estadio.html">Estádio</a></li>
+      <li><a href="titulos.html">Títulos</a></li>
+      <li><a href="idolos.html">Ídolos</a></li>
+      <li><a href="torcida.html">Torcida</a></li>
+      <li><a href="clima.html">Clima</a></li>
+      <li><a href="linha-do-tempo.html">Linha do tempo</a></li>
+      <li><a href="curiosidades.html">Curiosidades</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="uniformes.html">Uniformes</a></li>
+      <li><a href="aproveitamento.html">Aproveitamento</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="base.html">Base</a></li>
+      <li><a href="classicos.html">Clássicos</a></li>
+    </ul>
+  </nav>
+  <!-- CSS INLINE -->
+  <div class="faixa" style="height:9px"></div>
+</header>
+<main id="conteudo">
+  <section class="hero">
+    <div class="container">
+      <h1>A história do clube</h1>
+      <p class="lead">Do São Paulo da Floresta ao tricampeão mundial. Texto carregado ao vivo da Wikipédia.</p>
+    </div>
+  </section>
+  <div class="container conteudo">
+
+    <div class="duas-colunas">
+      <article>
+        <h2>Resumo da Wikipédia</h2>
+        <p id="wiki-texto" aria-live="polite">Carregando...</p>
+        <p><a id="wiki-link" href="#" hidden target="_blank" rel="noopener">Ler o artigo completo</a></p>
+        <button id="btn-recarregar" type="button">Recarregar texto</button>
+      </article>
+      <aside class="card card--preto">
+        <h3>Datas-chave</h3>
+        <p><strong>25/01/1930:</strong> fundação oficial do clube.</p>
+        <p><strong>16/12/1935:</strong> refundação como São Paulo Futebol Clube.</p>
+        <p style="font-size:.9rem">Fonte do resumo ao lado: API REST da Wikipédia (pt).</p>
+      </aside>
+    </div>
+
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <p style="margin:0">Projeto de estudo sobre o São Paulo Futebol Clube. Site não oficial e sem fins lucrativos. &copy; <span id="ano"></span></p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/historia.js"></script>
+</body>
+</html>

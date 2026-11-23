@@ -1,0 +1,56 @@
+/* ===== CSS EXTERNO (global) =====
+   Seletores de TAG, CLASSE e ID usados em todo o site. */
+:root{--vermelho:#D3101C;--preto:#0d0d0d;--fundo:#f4f4f2;--texto:#1a1a1a;--card:#fff;--borda:#dcdcd8;--suave:#5c5c58}
+*{box-sizing:border-box}
+
+/* --- seletores de tag --- */
+body{margin:0;font-family:'Barlow',system-ui,sans-serif;background:var(--fundo);color:var(--texto);line-height:1.6;transition:background .2s}
+h1,h2,h3{font-family:'Barlow Condensed','Arial Narrow',sans-serif;line-height:1.05;margin:0 0 .5em}
+h1{font-size:clamp(2.6rem,8vw,5.5rem);font-weight:800;text-transform:uppercase}
+h2{font-size:2rem;font-weight:800}
+h3{font-size:1.4rem;font-weight:800}
+a{color:var(--vermelho)}
+input,select,textarea{font:inherit;width:100%;padding:.6rem;border:2px solid var(--borda);border-radius:4px;background:var(--card);color:var(--texto)}
+label{display:block;font-weight:600;margin:.8rem 0 .25rem}
+button{cursor:pointer;font:inherit;font-weight:600;border:0;border-radius:4px;padding:.6rem 1.1rem;background:var(--vermelho);color:#fff}
+button:hover{background:#a80c16}
+footer{background:var(--preto);color:#bdbdb8;padding:2rem 0;margin-top:3rem;text-align:center;font-size:.95rem}
+
+/* --- tema escuro --- */
+body.escuro{--fundo:#141414;--texto:#eee;--card:#1f1f1f;--borda:#3a3a3a;--suave:#a9a9a4}
+body.escuro a{color:#ff7078}
+
+/* --- seletores de classe --- */
+.container{width:min(1080px,92%);margin-inline:auto}
+.barra{display:flex;align-items:center;gap:.6rem;padding:.7rem 0}
+.marca{font-family:'Barlow Condensed',sans-serif;font-size:1.6rem;font-weight:800;color:#fff!important;text-decoration:none;margin-right:auto}
+.faixa{background:linear-gradient(#D3101C 0 34%,#fff 34% 67%,#0d0d0d 67%)}
+.hero{background:var(--vermelho);color:#fff;padding:3.5rem 0 3rem;border-bottom:10px solid #fff;box-shadow:0 10px 0 var(--preto)}
+.lead{font-size:1.25rem;max-width:60ch;margin:0}
+.conteudo{padding:3.2rem 0 1rem}
+.grade{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.card{background:var(--card);border:1px solid var(--borda);border-left:6px solid var(--vermelho);padding:1.2rem;border-radius:2px}
+.card--preto{border-left-color:var(--preto)}
+.card a.titulo{font-family:'Barlow Condensed',sans-serif;font-size:1.5rem;font-weight:800;text-decoration:none}
+.card p{margin:.3rem 0 0;color:var(--suave)}
+.botoes{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}
+.botoes button[aria-pressed="true"]{background:var(--preto)}
+.resultado{margin-top:1.2rem;padding:1rem 1.2rem;background:var(--card);border:2px dashed var(--vermelho)}
+.numero{font-family:'Barlow Condensed',sans-serif;font-size:4rem;font-weight:800;color:var(--vermelho);line-height:1}
+.erro{color:#b00020;font-weight:600}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:1rem;top:1rem;background:#fff;color:#000;padding:.5rem;z-index:99}
+.duas-colunas{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+
+/* --- seletores de ID --- */
+#topo{background:var(--preto);color:#fff;position:sticky;top:0;z-index:10}
+#btn-menu,#btn-tema{background:transparent;border:1px solid #6a6a6a}
+#btn-menu:hover,#btn-tema:hover{background:#2a2a2a}
+#menu{background:#1a1a1a;padding:1rem 4%}
+#menu[hidden]{display:none}
+#menu ul{list-style:none;margin:0 auto;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:.2rem;max-width:1080px}
+#menu a{display:block;padding:.4rem .7rem;color:#fff;text-decoration:none;border-left:3px solid transparent}
+#menu a:hover,#menu a[aria-current]{border-left-color:var(--vermelho);background:#2a2a2a}
+
+:focus-visible{outline:3px solid #ffb703;outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}

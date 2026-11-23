@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Uniformes | Tricolor Paulista</title>
+<meta name="description" content="Vermelho, branco e preto. Troque o estilo da ilustração (arte livre, não é uniforme oficial).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+<!-- CSS EXTERNO -->
+<link rel="stylesheet" href="css/style.css">
+<!-- CSS INTERNO (específico desta página) -->
+<style>
+#camisa path{transition:fill .3s}
+</style>
+</head>
+<body id="pagina-uniformes">
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<header id="topo">
+  <div class="container barra">
+    <a class="marca" href="index.html">Tricolor Paulista</a>
+    <button id="btn-tema" type="button">Tema escuro</button>
+    <button id="btn-menu" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  </div>
+  <nav id="menu" aria-label="Páginas do site" hidden>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="historia.html">História</a></li>
+      <li><a href="estadio.html">Estádio</a></li>
+      <li><a href="titulos.html">Títulos</a></li>
+      <li><a href="idolos.html">Ídolos</a></li>
+      <li><a href="torcida.html">Torcida</a></li>
+      <li><a href="clima.html">Clima</a></li>
+      <li><a href="linha-do-tempo.html">Linha do tempo</a></li>
+      <li><a href="curiosidades.html">Curiosidades</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="uniformes.html" aria-current="page">Uniformes</a></li>
+      <li><a href="aproveitamento.html">Aproveitamento</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="base.html">Base</a></li>
+      <li><a href="classicos.html">Clássicos</a></li>
+    </ul>
+  </nav>
+  <!-- CSS INLINE -->
+  <div class="faixa" style="height:9px"></div>
+</header>
+<main id="conteudo">
+  <section class="hero">
+    <div class="container">
+      <h1>Cores e camisas</h1>
+      <p class="lead">Vermelho, branco e preto. Troque o estilo da ilustração (arte livre, não é uniforme oficial).</p>
+    </div>
+  </section>
+  <div class="container conteudo">
+
+    <div class="duas-colunas">
+      <div style="text-align:center">
+        <svg viewBox="0 0 240 230" id="camisa" role="img" aria-label="Ilustração de camisa" style="max-width:320px;width:100%">
+          <path id="corpo" d="M80 15 Q120 40 160 15 L215 40 L240 95 L200 110 L190 90 L190 215 L50 215 L50 90 L40 110 L0 95 L25 40 Z" fill="#fff" stroke="#0d0d0d" stroke-width="3"/>
+          <rect id="faixa1" x="50" y="105" width="140" height="22" fill="#D3101C"/>
+          <rect id="faixa2" x="50" y="135" width="140" height="22" fill="#0d0d0d"/>
+        </svg>
+      </div>
+      <section>
+        <h2 id="nome-estilo">Clássica</h2>
+        <p>Escolha um estilo:</p>
+        <div class="botoes" id="estilos">
+          <button type="button" data-estilo="classica">Clássica</button>
+          <button type="button" data-estilo="vermelha">Vermelha</button>
+          <button type="button" data-estilo="preta">Preta</button>
+        </div>
+        <p style="color:var(--suave)">O tricolor está nas cores: vermelho, branco e preto.</p>
+      </section>
+    </div>
+
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <p style="margin:0">Projeto de estudo sobre o São Paulo Futebol Clube. Site não oficial e sem fins lucrativos. &copy; <span id="ano"></span></p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/uniformes.js"></script>
+</body>
+</html>
